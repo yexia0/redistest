@@ -1,0 +1,13 @@
+[package]
+name = "redistest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+env_logger = "0.8.4"
+futures = "0.3.17"
+log = "0.4.14"
+redis = { version = "0.27.2", features = ["cluster", "aio", "tokio-comp", "connection-manager", "tokio-rustls-comp"] }
+anyhow = "1.0.58"
+tokio = { version = "1.40.0", features = ["full"] }
+
